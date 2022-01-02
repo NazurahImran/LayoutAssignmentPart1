@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lite_rolling_switch/lite_rolling_switch.dart';
 
+\\testing1
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -52,18 +53,7 @@ class MyStatelessWidget extends StatelessWidget {
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
-                Tab(
-                  child: Text(
-                    "Living Room",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-                Tab(
-                  child: Text(
-                    "Bed Room",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
+                
               ],
             ),
           ),
@@ -302,161 +292,7 @@ class MyStatelessWidget extends StatelessWidget {
                 ),
               ],
             ),
-            Column(
-              children: [
-                Expanded(
-                  child: GridView.count(
-                    primary: false,
-                    padding: const EdgeInsets.all(20),
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10,
-                    crossAxisCount: 2,
-                    children: <Widget>[
-                      Container(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Text(
-                                "Light",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child: LiteRollingSwitch(
-                                value: false,
-                                textOn: 'On',
-                                textOff: 'Off',
-                                colorOn: Colors.deepOrange,
-                                colorOff: Colors.blueGrey,
-                                iconOn: Icons.lightbulb_outline,
-                                iconOff: Icons.power_settings_new,
-                                onChanged: (bool state) {
-                                  print('turned ${(state) ? 'on' : 'off'}');
-                                },
-                              ),
-                            ),
-                          ],
-                        ),
-                        color: Colors.grey[200],
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Text(
-                                "Bilik Hana",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child: LiteRollingSwitch(
-                                value: false,
-                                textOn: 'On',
-                                textOff: 'Off',
-                                colorOn: Colors.deepOrange,
-                                colorOff: Colors.blueGrey,
-                                iconOn: Icons.lightbulb_outline,
-                                iconOff: Icons.power_settings_new,
-                                onChanged: (bool state) {
-                                  print('turned ${(state) ? 'on' : 'off'}');
-                                },
-                              ),
-                            ),
-                          ],
-                        ),
-                        color: Colors.grey[200],
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Text(
-                                "Bridge",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child: LiteRollingSwitch(
-                                value: false,
-                                textOn: 'On',
-                                textOff: 'Off',
-                                colorOn: Colors.deepOrange,
-                                colorOff: Colors.blueGrey,
-                                iconOn: Icons.lightbulb_outline,
-                                iconOff: Icons.power_settings_new,
-                                onChanged: (bool state) {
-                                  print('turned ${(state) ? 'on' : 'off'}');
-                                },
-                              ),
-                            ),
-                          ],
-                        ),
-                        color: Colors.grey[200],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: [
-                Expanded(
-                  child: GridView.count(
-                    primary: false,
-                    padding: const EdgeInsets.all(20),
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10,
-                    crossAxisCount: 2,
-                    children: <Widget>[
-                      Container(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Text(
-                                "Bedroom Light",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child: LiteRollingSwitch(
-                                value: false,
-                                textOn: 'On',
-                                textOff: 'Off',
-                                colorOn: Colors.deepOrange,
-                                colorOff: Colors.blueGrey,
-                                iconOn: Icons.lightbulb_outline,
-                                iconOff: Icons.power_settings_new,
-                                onChanged: (bool state) {
-                                  print('turned ${(state) ? 'on' : 'off'}');
-                                },
-                              ),
-                            ),
-                          ],
-                        ),
-                        color: Colors.grey[200],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
+            
         ),
       ),
     );
